@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dior Beauty | Maquillaje de Lujo</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Encabezado y Navegación -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="logo">DIOR</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Colección</a></li>
+                    <li><a href="#lanzamiento">Destacados</a></li>
+                    <li><a href="#contacto">Boletín</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sección Principal / Hero -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <span class="hero-subtitle">Alta Costura para tu Rostro</span>
+                <h1>DIOR BEAUTY</h1>
+                <p>Descubre el arte del maquillaje de lujo con fórmulas icónicas y acabados de alta definición.</p>
+                <a href="#productos" class="btn btn-primary">Ver Colección</a>
+            </div>
+        </section>
+
+        <!-- Catálogo de Productos (CSS Grid) -->
+        <section id="productos" class="products-section">
+            <h2 class="section-title">Iconos de Maquillaje</h2>
+            <p class="section-subtitle">Los esenciales infaltables de la maison Christian Dior.</p>
+
+            <div class="product-grid">
+                <!-- Tarjeta 1 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=600&q=80" alt="Labial Rouge Dior">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Labios</span>
+                        <h3>Rouge Dior</h3>
+                        <p class="product-desc">Labial icónico hidratante de larga duración con acabados mate y satinado.</p>
+                        <div class="product-footer">
+                            <span class="price">$195.000 COP</span>
+                            <button class="btn btn-secondary btn-card">Añadir</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tarjeta 2 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1631729371254-42c2892f0e6e?auto=format&fit=crop&w=600&q=80" alt="Base Dior Forever">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Rostro</span>
+                        <h3>Dior Forever</h3>
+                        <p class="product-desc">Base fluida limpia de alta cobertura con 24h de duración e hidratación.</p>
+                        <div class="product-footer">
+                            <span class="price">$270.000 COP</span>
+                            <button class="btn btn-secondary btn-card">Añadir</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tarjeta 3 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1599733589046-9b8308b5b50d?auto=format&fit=crop&w=600&q=80" alt="Dior Lip Glow Oil">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Labios</span>
+                        <h3>Addict Lip Glow Oil</h3>
+                        <p class="product-desc">Aceite nutritivo para labios que realza el color natural con un brillo intenso.</p>
+                        <div class="product-footer">
+                            <span class="price">$180.000 COP</span>
+                            <button class="btn btn-secondary btn-card">Añadir</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección Interactiva / Formulario -->
+        <section id="contacto" class="newsletter-section">
+            <div class="newsletter-container">
+                <h2>Únete a la Experiencia Dior</h2>
+                <p>Suscríbete para recibir invitaciones exclusivas, tutoriales y promociones únicas.</p>
+                <form class="newsletter-form" id="diorForm">
+                    <div class="form-group">
+                        <input type="email" id="emailInput" placeholder="Correo electrónico" required>
+                        <button type="submit" class="btn btn-primary">Suscribirse</button>
+                    </div>
+                    <p class="form-message" id="formMessage"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <span class="footer-logo">DIOR</span>
+                <p>Atención al cliente exclusiva y envíos a todo el país.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Categorías</h4>
+                <ul>
+                    <li><a href="#">Rostro</a></li>
+                    <li><a href="#">Labios</a></li>
+                    <li><a href="#">Ojos</a></li>
+                    <li><a href="#">Ediciones Limitadas</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Aviso Legal</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Dior Beauty — Proyecto Académico de Desarrollo Web.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
